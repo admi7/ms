@@ -1,0 +1,63 @@
+@import './elements/elements.css';
+@import './resource/resource.css';
+
+@import '~bootstrap/scss/bootstrap';
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/<type>';
+
+@import "~font-awesome/css/font-awesome.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* section background */
+    --bg-init: #fdf5fd;
+    --bg-second: #cfcccf;
+    --bg-init-trans: #fdf5fde3;
+    --bg-second-trans: #cfcccfea;
+    /* section des coleurs de button */
+    --primary: MidnightBlue;
+    --success: rgb(59, 255, 0);
+    --valid: SpringGreen;
+    --error: rgb(217, 101, 38);
+    --advanced: Coral;
+    /* section transition */
+    --trans-04: 0.3s all ease-in-out;
+    --trans-04: 0.4s all ease-in-out;
+    --trans-05: 0.5s all ease-in-out;
+    --trans-06: 0.6s all ease-in-out;
+    --trans-07: 0.7s all ease-in-out;
+    /* section background */
+    --col-init: rgb(22, 21, 21);
+    --col-second: rgb(36, 36, 36);
+    --col-visible: rgb(230, 124, 82);
+    --col-primary: rgb(94, 146, 223);
+}
+
+body {
+    background-color: var(--bg-init);
+    color: var(--col-init);
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+body.black {
+    /* section background */
+    --bg-init: #1b1a1b;
+    --bg-second: #292829;
+    --bg-init-trans: #1f1e1fd7;
+    --bg-second-trans: #292829d3;
+    /* section background */
+    --col-init: rgb(255, 255, 255);
+    --col-second: rgb(231, 226, 226);
+}
+
+#app {
+    max-width: 1500px;
+    width: 100%;
+}
+
+/* ELEMENT DU DOM */
