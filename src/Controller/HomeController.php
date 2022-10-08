@@ -11,6 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\WebLink\GenericLinkProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
+
 class HomeController extends AbstractController
 {
     #[Route('/home', name: 'app_home')]

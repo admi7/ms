@@ -9,13 +9,7 @@ function cssFile ()
         setTimeout(logger, 2000)
         require('../../styles/resource/header.css')
     }
-    console.log( 'header est en cour de charge ...' );
+    console.log( 'header est en coure de charge ...' );
 }
-
-const logger = ( () =>
-{
-    console.log('header est charger')
-})
-
 
 export {cssFile}

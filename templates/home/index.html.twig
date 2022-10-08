@@ -3,43 +3,24 @@
 {% block title %}Hello HomeController!
 {% endblock %}
 
-{% block nav %}
-	<div class="container-navs">
-		{% include "resource/_nav.html.twig" %}
-		{% include "resource/nav.html.twig" %}
-	</div>
-{% endblock nav %}
-{% set i = services | length %}
-{% set cols = ['1877f2', '25d366', '1d11f2','c32aa3', 'ff0001', '0a66c2' ] %}
 
 {% block body %}
 	<div id="home">
-		<div class="container-fluid">
-			{% include "resource/_header.html.twig" %}
-			<div class="container">
-				<div class="row">
-					<h2 class="big-title line mrg-15">servcies</h2>
-					{% include "resource/components/blocks_designe.html.twig" %}
-					<div class="container line">
-						<div class="line rad-05 bg-second">
-							<p class="p">
-								<strong>Vous</strong>
-								pouvez voir tous nos
-								<a href=" {{ path('app_services') }} " class="btn">services</a>
-								(<span>
-									<a href=" {{path('app_services')}}typeofservice=gratuite " class="btn">Gratuite</a>
+		<div class="row">
 
-								</span>
-								ou
-								<span>
-									<a href=" {{path('app_services')}}typeofservice=payant " class="btn">Payant</a>
-								</span>)
-							</p>
-						</p>
-					</div>
-				</div>
+			<nav class="home-navbar line red">
+				<a href=" {{ path('app_home') }} "><img width="150px" height="150px" src=" {{asset('build/images/image_logo.png') }} " alt="logo"></a>
+			</nav>
+
+			{% include "resource/home_header.html.twig" %}
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+			<div class="container">
+				<h1>debut de la page home</h1>
+				<i class="fa fa-safari" aria-hidden="true"></i>
+				<i class="fa fa-500px" aria-hidden="true"></i>
 			</div>
 		</div>
 	</div>
-
-</div>{% endblock %}
+{% endblock %}

@@ -95,6 +95,9 @@ nav .nav-links ul {
 
 .block-ul li:hover .container-block-li {
     height: 300px;
-    padding: auto;
     transition: var(--trans-04);
+}
+
+.home-aff-service {
+    width: 300px;
 }
