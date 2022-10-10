@@ -6,21 +6,19 @@
 
 {% block body %}
 	<div id="home">
-		<div class="row">
-
-			<nav class="home-navbar line red">
+		<div class="conatainer-fluid">
+			<nav class="home-navbar flex red">
 				<a href=" {{ path('app_home') }} "><img width="150px" height="150px" src=" {{asset('build/images/image_logo.png') }} " alt="logo"></a>
+				<div class="home-navbar-links navbar">
+					<span class="label label-danger">Label</span>
+					<div class="alert alert-success" role="alert">
+						<strong>Success</strong>
+						<a href="#" class="alert-link">success link</a>
+					</div>
+				</div>
 			</nav>
-
 			{% include "resource/home_header.html.twig" %}
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-			<div class="container">
-				<h1>debut de la page home</h1>
-				<i class="fa fa-safari" aria-hidden="true"></i>
-				<i class="fa fa-500px" aria-hidden="true"></i>
-			</div>
 		</div>
+		{# <img width="150px" height="150px" src=" {{asset('build/images/header_01.svg') }} " alt="logo"> #}
 	</div>
 {% endblock %}
