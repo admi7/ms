@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (0f2f062aeb, 2022-09-21, custom)"
+   sodipodi:docname="designe-inkscape"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.5"
+     inkscape:cx="810"
+     inkscape:cy="616"
+     inkscape:window-width="1680"
+     inkscape:window-height="1013"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="346.74485"
+       y="643.78099"
+       width="1104.0993"
+       height="208.73926"
+       id="rect1882" />
+    <rect
+       x="526.26032"
+       y="381.66246"
+       width="949.97646"
+       height="231.31259"
+       id="rect1631" />
+    <rect
+       x="602.64572"
+       y="391.42476"
+       width="1059.4889"
+       height="194.20288"
+       id="rect1445" />
+    <rect
+       x="526.26031"
+       y="381.66245"
+       width="949.97644"
+       height="231.31259"
+       id="rect1631-4" />
+  </defs>
+  <g
+     inkscape:label="from_base_layer"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="fill:#721c24"
+       id="rect1154"
+       width="1917.9374"
+       height="1085.5448"
+       x="-1.178488"
+       y="3.1580091" />
+    <text
+       xml:space="preserve"
+       id="text1629"
+       style="white-space:pre;shape-inside:url(#rect1631);fill:#ffffff"
+       inkscape:transform-center-x="-486.01716"
+       inkscape:transform-center-y="-0.40552236"
+       transform="translate(-382.53792,47.523791)"
+       inkscape:label="text_header_title"><tspan
+         x="526.25977"
+         y="440.78913"
+         id="tspan1918"><tspan
+           style="font-size:66.6667px;font-family:Sarai;-inkscape-font-specification:'Sarai, Normal'"
+           id="tspan1916">CONFIEZ VOS SERVICES ET/OU </tspan></tspan><tspan
+         x="526.25977"
+         y="524.1225"
+         id="tspan1930"><tspan
+           style="font-size:66.6667px;font-family:Sarai;-inkscape-font-specification:'Sarai, Normal'"
+           id="tspan1920">ACTIVIT</tspan><tspan
+           style="font-size:66.6667px;font-family:Sarai;-inkscape-font-specification:'Sarai, Normal'"
+           id="tspan1922">É</tspan><tspan
+           style="font-size:66.6667px;font-family:Sarai;-inkscape-font-specification:'Sarai, Normal'"
+           id="tspan1924">S </tspan><tspan
+           style="font-size:66.6667px;font-family:Sarai;-inkscape-font-specification:'Sarai, Normal'"
+           id="tspan1926">À</tspan><tspan
+           style="font-size:66.6667px;font-family:Sarai;-inkscape-font-specification:'Sarai, Normal'"
+           id="tspan1928"> DES PROS</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1880"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1882);fill:#ffffff"
+       inkscape:label="text_description"><tspan
+         x="346.74414"
+         y="670.91409"
+         id="tspan1932">MS.live, est une services baser à Dakar - Sénégal qui vous propose une </tspan><tspan
+         x="346.74414"
+         y="709.24747"
+         id="tspan1934">lage games de services et de prestation qui vous facilité vraiment les </tspan><tspan
+         x="346.74414"
+         y="747.58084"
+         id="tspan1936">affaires.</tspan></text>
+  </g>
+  <g
+     id="layer2"
+     inkscape:label="from_logo"
+     transform="translate(-2148.8277,-482.77899)">
+    <ellipse
+       style="fill:#ffffff;stroke-width:1.29754"
+       id="path1212"
+       cx="2295.9185"
+       cy="631.65869"
+       rx="110.83679"
+       ry="118.1216" />
+  </g>
+</svg>

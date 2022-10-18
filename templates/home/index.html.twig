@@ -6,9 +6,10 @@
 
 {% block body %}
 	<div id="home">
+		{% include "resource/_nav.html.twig" %}
 		<div class="conatainer-fluid">
 			<nav class="home-navbar flex red">
-				<a href=" {{ path('app_home') }} "><img width="150px" height="150px" src=" {{asset('build/images/image_logo.png') }} " alt="logo"></a>
+				<a href=" {{ path('app_home') }} "><img width="150px" height="150px" src=" {{asset('build/images/logo-120x120-copie.svg') }} " alt="logo"></a>
 				<div class="home-navbar-links navbar">
 					<span class="label label-danger">Label</span>
 					<div class="alert alert-success" role="alert">
@@ -18,7 +19,11 @@
 				</div>
 			</nav>
 			{% include "resource/home_header.html.twig" %}
+
+			<i class="fas fa-divide   fa-fw"></i>
+			<p></p>
+			{# <img src=" {{asset('build/images/image.svg') }} " alt="contact-icon"> #}
+
 		</div>
-		{# <img width="150px" height="150px" src=" {{asset('build/images/header_01.svg') }} " alt="logo"> #}
 	</div>
 {% endblock %}
