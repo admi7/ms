@@ -2,10 +2,10 @@
 
 namespace App\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\UsersRepository;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
 
 #[ORM\Entity(repositoryClass: UsersRepository::class)]
 class Users
@@ -29,6 +29,9 @@ class Users
 
     #[ORM\Column(type: 'string', length: 100)]
     private $typeuser;
+
+    #[ORM\Column(type: 'string', length: 100)]
+    private $email;
 
     #[ORM\Column(type: 'string', length: 25, nullable: true)]
     private $stauts;
@@ -105,6 +108,18 @@ class Users
     public function setTypeuser(string $typeuser): self
     {
         $this->typeuser = $typeuser;
+
+        return $this;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->typeuser = $email;
 
         return $this;
     }

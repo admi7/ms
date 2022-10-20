@@ -18,10 +18,10 @@ class CouponsRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Conpons::class);
+        parent::__construct($registry, Coupons::class);
     }
 
-    public function add(Conpons $entity, bool $flush = false): void
+    public function add(Coupons $entity, bool $flush = false): void
     {
         $this->getEntityManager()->persist($entity);
 
@@ -30,7 +30,7 @@ class CouponsRepository extends ServiceEntityRepository
         }
     }
 
-    public function remove(Conpons $entity, bool $flush = false): void
+    public function remove(Coupons $entity, bool $flush = false): void
     {
         $this->getEntityManager()->remove($entity);
 

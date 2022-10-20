@@ -1,0 +1,4 @@
+[2022-10-20 15:43:18.485] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {"name":"Offline"}
+[2022-10-20 15:43:19.664] [sharedprocess] [info] Starting worker process with pid 45682 (type: fileWatcher, window: 1).
+[2022-10-20 15:48:20.253] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {"name":"Offline"}
+[2022-10-20 15:53:20.276] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {"name":"Offline"}
