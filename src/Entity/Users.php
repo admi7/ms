@@ -2,10 +2,8 @@
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
 use App\Repository\UsersRepository;
-use Doctrine\Common\Collections\Collection;
-use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: UsersRepository::class)]
 class Users
@@ -15,99 +13,61 @@ class Users
     #[ORM\Column(type: 'integer')]
     private $id;
 
-    #[ORM\Column(type: 'string', length: 100, nullable: false)]
-    private $lastname;
+    #[ORM\Column(type: 'string', length: 50)]
+    private $firstName;
 
-    #[ORM\Column(type: 'string', length: 100, nullable: false)]
-    private $firtname;
-
-    #[ORM\Column(type: 'integer')]
-    private $phonenumber;
+    #[ORM\Column(type: 'string', length: 50)]
+    private $lastName;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $location;
-
-    #[ORM\Column(type: 'string', length: 100)]
-    private $typeuser;
-
-    #[ORM\Column(type: 'string', length: 100)]
     private $email;
 
-    #[ORM\Column(type: 'string', length: 25, nullable: true)]
-    private $stauts;
+    #[ORM\Column(type: 'string', length: 255)]
+    private $password;
 
-    #[ORM\Column(type: 'datetime_immutable', options: ['default' => 'CURRENT_TIMESTAMP'])]
+    #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    private $adress;
+
+    #[ORM\Column(type: 'string', length: 15, nullable: true)]
+    private $status;
+
+    #[ORM\Column(type: 'datetime_immutable')]
     private $created_at;
 
-    #[ORM\OneToMany(mappedBy: 'users', targetEntity: Orders::class)]
-    private $orders;
+    #[ORM\Column(type: 'integer')]
+    private $number;
 
-    public function __construct()
-    {
-        $this->orders = new ArrayCollection();
-    }
+    #[ORM\Column(type: 'integer', nullable: true)]
+    private $whatsappNumber;
+
+    #[ORM\Column(type: 'string', length: 255)]
+    private $bussness;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getLastname(): ?string
+    public function getFirstName(): ?string
     {
-        return $this->lastname;
+        return $this->firstName;
     }
 
-    public function setLastname(?string $lastname): self
+    public function setFirstName(string $firstName): self
     {
-        $this->lastname = $lastname;
+        $this->firstName = $firstName;
 
         return $this;
     }
 
-    public function getFirtname(): ?string
+    public function getLastName(): ?string
     {
-        return $this->firtname;
+        return $this->lastName;
     }
 
-    public function setFirtname(?string $firtname): self
+    public function setLastName(string $lastName): self
     {
-        $this->firtname = $firtname;
-
-        return $this;
-    }
-
-    public function getPhonenumber(): ?int
-    {
-        return $this->phonenumber;
-    }
-
-    public function setPhonenumber(int $phonenumber): self
-    {
-        $this->phonenumber = $phonenumber;
-
-        return $this;
-    }
-
-    public function getLocation(): ?string
-    {
-        return $this->location;
-    }
-
-    public function setLocation(string $location): self
-    {
-        $this->location = $location;
-
-        return $this;
-    }
-
-    public function getTypeuser(): ?string
-    {
-        return $this->typeuser;
-    }
-
-    public function setTypeuser(string $typeuser): self
-    {
-        $this->typeuser = $typeuser;
+        $this->lastName = $lastName;
 
         return $this;
     }
@@ -119,19 +79,43 @@ class Users
 
     public function setEmail(string $email): self
     {
-        $this->typeuser = $email;
+        $this->email = $email;
 
         return $this;
     }
 
-    public function getStauts(): ?string
+    public function getPassword(): ?string
     {
-        return $this->stauts;
+        return $this->password;
     }
 
-    public function setStauts(?string $stauts): self
+    public function setPassword(string $password): self
     {
-        $this->stauts = $stauts;
+        $this->password = $password;
+
+        return $this;
+    }
+
+    public function getAdress(): ?string
+    {
+        return $this->adress;
+    }
+
+    public function setAdress(?string $adress): self
+    {
+        $this->adress = $adress;
+
+        return $this;
+    }
+
+    public function getStatus(): ?string
+    {
+        return $this->status;
+    }
+
+    public function setStatus(?string $status): self
+    {
+        $this->status = $status;
 
         return $this;
     }
@@ -148,32 +132,38 @@ class Users
         return $this;
     }
 
-    /**
-     * @return Collection<int, Orders>
-     */
-    public function getOrders(): Collection
+    public function getNumber(): ?int
     {
-        return $this->orders;
+        return $this->number;
     }
 
-    public function addOrder(Orders $order): self
+    public function setNumber(int $number): self
     {
-        if (!$this->orders->contains($order)) {
-            $this->orders[] = $order;
-            $order->setUsers($this);
-        }
+        $this->number = $number;
 
         return $this;
     }
 
-    public function removeOrder(Orders $order): self
+    public function getWhatsappNumber(): ?int
     {
-        if ($this->orders->removeElement($order)) {
-            // set the owning side to null (unless already changed)
-            if ($order->getUsers() === $this) {
-                $order->setUsers(null);
-            }
-        }
+        return $this->whatsappNumber;
+    }
+
+    public function setWhatsappNumber(?int $whatsappNumber): self
+    {
+        $this->whatsappNumber = $whatsappNumber;
+
+        return $this;
+    }
+
+    public function getBussness(): ?string
+    {
+        return $this->bussness;
+    }
+
+    public function setBussness(string $bussness): self
+    {
+        $this->bussness = $bussness;
 
         return $this;
     }
